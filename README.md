@@ -6,10 +6,23 @@ Create command line tool that takes two filenames as attributes:
 duplicates input.txt output.txt
 ```
 
-## How to measure
 
+
+## Requirements
+* Every duplicate is only once in output
+* Must work with very large input files up to 5 GB in size
+* String max length is 255 bytes, containing only ASCII characters
+* 0.1% of false duplicates in output is acceptable! 
+* Must run on Ubuntu with 16 GB of RAM and 4 CPUs
+
+## What to optimize
+* Minimum execution time
+* Minimum peak memory usage
+
+## How to measure
+"Elapsed (wall clock) time" and "Maximum resident set size" are key indicators to optimize for.
 ```
-/usr/bin/time -vp java
+/usr/bin/time -vp input.txt output.txt
 
 Command exited with non-zero status 1
         Command being timed: "java"
@@ -36,17 +49,6 @@ Command exited with non-zero status 1
         Page size (bytes): 4096
         Exit status: 1
 ```
-
-## Requirements
-* Every duplicate is only once in output
-* Must work with very large input files up to 5 GB in size
-* String max length is 255 bytes, containing only ASCII characters
-* 0.1% of false duplicates in output is acceptable! 
-* Must run on Ubuntu with 16 GB of RAM and 4 CPUs
-
-## What to optimize
-* Minimum execution time
-* Minimum peak memory usage
 
 ## Example 1 
 ### Input
