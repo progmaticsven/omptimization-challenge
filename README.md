@@ -6,17 +6,15 @@ Create command line tool that takes two filenames as attributes:
 duplicates input.txt output.txt
 ```
 
-
-
 ## Requirements
-* Every duplicate is only once in output
+* Every duplicate is only once present in output
 * Must work with very large input files up to 5 GB in size
 * String max length is 255 bytes, containing only ASCII characters
 * 0.1% of false duplicates in output is acceptable! 
 * Must run on Ubuntu with 16 GB of RAM and 4 CPUs
 
-## What to optimize
-* Minimum execution time
+## What to optimize for?
+* Minimum execution time. 
 * Minimum peak memory usage
 
 ## How to measure
