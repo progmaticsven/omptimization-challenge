@@ -5,7 +5,9 @@ Create command line tool that takes two filenames as attributes:
 ```
 duplicates input.txt output.txt
 ```
-##How to measure
+
+## How to measure
+
 ```
 /usr/bin/time -vp java
 
@@ -60,7 +62,7 @@ bar
 bar
 ```
 
-##Example 2 
+## Example 2 
 
 ### Input
 ```
@@ -69,7 +71,7 @@ baz
 bar
 ```
 
-##Example 3
+## Example 3
 ### Input
 ```
 foo
