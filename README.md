@@ -10,7 +10,7 @@ duplicates input.txt output.txt
 * Every duplicate is only once present in output
 * Must work with very large input files up to 5 GB in size
 * String max length is 255 bytes, containing only ASCII characters
-* 0.1% of false duplicates in output is acceptable! 
+* 1% of false duplicates in output is acceptable! 
 * Must run on Ubuntu with 16 GB of RAM and 4 CPUs
 
 ## What to optimize for?
