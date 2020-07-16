@@ -1,5 +1,5 @@
 # Find duplicates
-Goal is to find duplicates in input file and write found duplicates to output file.
+Goal is to find duplicate lines in input file and write found duplicates to output file.
 
 Create command line tool that takes two filenames as attributes:
 ```
