@@ -8,7 +8,7 @@ Create command line tool that takes two filenames as attributes:
 duplicates input.txt output.txt
 ```
 
-# You can use InputGenerator.java to generate input files with different sizes and duplication ratios.
+You can use InputGenerator.java to generate input files with different sizes and duplication ratios.
 
 ## Requirements
 * Every duplicate is only once present in output
@@ -20,7 +20,6 @@ duplicates input.txt output.txt
 ## What to optimize for?
 * Minimum execution time with ~30000000 lines. 
 * Minimum peak memory usage with ~30000000 lines
-* 
 
 ## How to measure
 "Elapsed (wall clock) time" and "Maximum resident set size" are key indicators to optimize for.
