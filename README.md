@@ -1,26 +1,31 @@
 # Find duplicates
-Goal is to find duplicates in input file and write found duplicates to output file.
+Goal is to find duplicate lines in input file and write found duplicates to output file.
+
+NB! First line contains number following input lines in a file.
 
 Create command line tool that takes two filenames as attributes:
 ```
 duplicates input.txt output.txt
 ```
 
+# You can use InputGenerator.java to generate input files with different sizes and duplication ratios.
+
 ## Requirements
 * Every duplicate is only once present in output
-* Must work with very large input files up to 5 GB in size
-* String max length is 255 bytes, containing only ASCII characters
+* Must work with very large input files up to 
+* String length is 6 to 255 bytes, containing only ASCII characters
 * 1% of false duplicates in output is acceptable! 
 * Must run on Ubuntu with 16 GB of RAM and 4 CPUs
 
 ## What to optimize for?
-* Minimum execution time. 
-* Minimum peak memory usage
+* Minimum execution time with ~30000000 lines. 
+* Minimum peak memory usage with ~30000000 lines
+* 
 
 ## How to measure
 "Elapsed (wall clock) time" and "Maximum resident set size" are key indicators to optimize for.
 ```
-/usr/bin/time -vp input.txt output.txt
+/usr/bin/time duplicates -vp input.txt output.txt
 
 Command exited with non-zero status 1
         Command being timed: "java"
@@ -51,6 +56,7 @@ Command exited with non-zero status 1
 ## Example 1 
 ### Input
 ```
+4
 foo
 bar
 baz
@@ -66,6 +72,7 @@ bar
 
 ### Input
 ```
+3
 foo
 baz
 bar
@@ -74,6 +81,7 @@ bar
 ## Example 3
 ### Input
 ```
+6
 foo
 baz
 bar
@@ -83,6 +91,7 @@ baz
 ``` 
 ### Output
 ```
+2
 foo
 baz
 ``` 
