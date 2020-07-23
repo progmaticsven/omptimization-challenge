@@ -14,12 +14,19 @@ You can use InputGenerator.java to generate input files with different sizes and
 * Every duplicate is only once present in output
 * Must work with very large input files up to 
 * String length is 6 to 255 bytes, containing only ASCII characters
-* 1% of false duplicates in output is acceptable! 
+* UP to 1% of false positive duplicates in output is acceptable. IE. having 1000 lines in input you can have 10 false duplicates in output. Missing actual duplicate in output is not allowed.
 * Must run on Ubuntu with 16 GB of RAM and 4 CPUs
 
 ## What to optimize for?
-* Minimum execution time with ~30000000 lines. 
-* Minimum peak memory usage with ~30000000 lines
+* Minimum execution time with ~30000000 lines - about 10% of lines duplicate. 
+* Minimum peak memory usage with ~30000000 lines - about 10% of lines duplicate.
+
+It must work correctly for other datasets also, but this is not goal for optimization and not measured.
+
+## How best is chosen
+* Based on minimum execution time
+* Based on minimum peak memory usage
+  
 
 ## How to measure
 "Elapsed (wall clock) time" and "Maximum resident set size" are key indicators to optimize for.
