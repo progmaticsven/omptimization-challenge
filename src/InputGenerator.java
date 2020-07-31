@@ -20,7 +20,7 @@ public class InputGenerator{
         PrintWriter out = new PrintWriter( new FileWriter( outputFile, false ) );
         out.println( linesCount );
         randomStrings.forEach( randomLine -> {
-            if( random.nextInt( 100 ) < duplicatesRatio ){
+            if( random.nextInt( 100 ) > duplicatesRatio ){
                 out.println( randomLine );
             }
             else{
