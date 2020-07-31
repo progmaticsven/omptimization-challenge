@@ -12,7 +12,7 @@ You can use InputGenerator.java to generate input files with different sizes and
 
 ## Requirements
 * Every duplicate is only once present in output
-* Must work with very large input files up to ~4 GB
+* Must work with very large input files up to ~4 GB in size
 * String length is 6 to 255 bytes, containing only ASCII characters
 * UP to 1% of false positive duplicates in output is acceptable. IE. having 1000 lines in input you can have 10 false duplicates in output. Missing actual duplicate in output is not allowed.
 * Must run on Ubuntu with 16 GB of RAM and 4 CPUs
