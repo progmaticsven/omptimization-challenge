@@ -10,6 +10,8 @@ duplicates input.txt output.txt
 
 You can use InputGenerator.java to generate input files with different sizes and duplication ratios.
 
+You can use OutputValidator.java to verify if your output file
+
 ## Requirements
 * Every duplicate is only once present in output
 * Must work with very large input files up to ~4 GB in size
