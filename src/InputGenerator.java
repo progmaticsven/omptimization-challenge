@@ -42,7 +42,7 @@ public class InputGenerator{
     public static String randomString(){
         int leftLimit = 48;
         int rightLimit = 122;
-        int length = random.nextInt( 255 ) + 6;
+        int length = random.nextInt( 249 ) + 6;
         return random.ints( leftLimit, rightLimit + 1 )
                 .filter( i -> (i <= 57 || i >= 65) && (i <= 90 || i >= 97) )
                 .limit( length )
