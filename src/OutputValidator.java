@@ -51,6 +51,6 @@ public class OutputValidator{
         out.println("Unique line count in output: " + outputLines.size());
 
         out.println("False positives count: " + falsePositives );
-        out.printf("False positives ratio: %f %%", ((float)falsePositives / (float)inputLines.size()) * 100 );
+        out.printf("False positives ratio: %f %% \n", ((float)falsePositives / (float)inputLines.size()) * 100 );
     }
 }
