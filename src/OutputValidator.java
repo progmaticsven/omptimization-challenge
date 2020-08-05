@@ -47,6 +47,9 @@ public class OutputValidator{
 
         long falsePositives = outputLines.keySet().stream().filter( outValue -> !inputDuplicates.contains( outValue ) ).count();
 
+        out.println( "Duplicates in input: " + inputDuplicates.size());
+        out.println( "Unique line count in output: " + outputLines.size());
+
         out.println( "False positives count: " + falsePositives );
         out.printf( "False positives ratio: %f %%", ((float)falsePositives / (float)inputLines.size()) * 100 );
     }
